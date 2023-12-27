@@ -8,7 +8,7 @@ export default function Card(props) {
     let Difference_In_Time = date2.getTime() - date1.getTime();
     return Difference_In_Time>0;
   }
-  const [qty,setQty]=useState(0)
+  const [qty,setQty]=useState(1)
   const [ret,setRet]=useState(100)
   let navigate=useNavigate();
   let cart=[]
