@@ -31,7 +31,7 @@ export default function Products() {
     let sellhistory=[];
     for(let i=0;i<cart.length;i++){
       for(let j=0;j<products.length;j++){
-        if(products[j].name==cart[i].name) products[i].quantity-=cart[i].qty;
+        if(products[j].name==cart[i].name) products[j].quantity-=cart[i].qty;
       }
     }
     localStorage.setItem('productsData',JSON.stringify(products))
